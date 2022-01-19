@@ -17,14 +17,10 @@ public class Main {
 
     private static void configure(String type) {
         switch (type) {
-            case "uber":
-                transport = new CarTransport();
-                break;
-            case "log":
-                transport = new MotorcycleTransport();
-                break;
-            default:
-                System.out.println("Selecione o tipo de entrega");
+            case "uber" -> transport = new CarTransport();
+            case "log" -> transport = new MotorcycleTransport();
+            case "eats" -> transport = new BikeTransport();
+            default -> System.out.println("Selecione o tipo de entrega");
         }
     }
 }

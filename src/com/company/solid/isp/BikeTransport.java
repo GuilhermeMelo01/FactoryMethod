@@ -1,12 +1,12 @@
 package com.company.solid.isp;
 
+import com.company.solid.isp.vehicle.Bike;
 import com.company.solid.isp.vehicle.IVehicle;
-import com.company.solid.isp.vehicle.Motorcycle;
 
-public class MotorcycleTransport extends Transport{
+public class BikeTransport extends Transport{
 
     @Override
     protected IVehicle createTransport() {
-        return new Motorcycle();
+        return new Bike();
     }
 }
